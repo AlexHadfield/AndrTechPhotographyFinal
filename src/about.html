@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>About Photographer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 
+    Don't add stylesheets/main.css or javascripts/main.js manually. 
+    They will be added automatically by Webpack.
+  -->
+</head>
+
+<body>
+  <!--  Your HTML goes here-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./images/bigLogo.png" alt="Logo" width="130" height="40" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse monaco" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown px-2">
+              <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="./about.html">Photographer</a></li>
+                <li><a class="dropdown-item" href="./gear.html">Gear</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a class="btn btn-outline-primary" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="btn btn-outline-primary" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div id="aboutText">
+          <h1>About The Photographer</h1>
+          <img src="./images/photographer.png" alt="The Photographer" id="AboutPhotographerPhoto">
+          <h2>Hey! My name is Alex.</h2>
+        </div>
+        <div id="pageBody">
+          <p class="text-start">I really enjoy hiking, enjoying the outdoors, listening to music, and hanging out with my friends.  
+            I have always found photography to be super powerful and intresting, so I decided to try my hand at it.</p>
+          <p>I do <b>Personal Photos</b>, <b>Family Photos</b>, and <b>Weddings</b>.</p>
+          <p>Click below to learn about my gear: </p>
+          <a class="btn btn-outline-secondary monaco" href="./gear.html" role="button">
+            About My Gear
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

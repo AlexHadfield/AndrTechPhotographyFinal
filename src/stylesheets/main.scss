@@ -1,0 +1,244 @@
+// Your styles go here
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+// Before Bootstrap - Variables
+//New Colors
+$primary: #0271F0;
+$secondary: #FFA203;
+$light: #7A8086;
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// After Bootstrap - Functions
+
+//Non Bootstrap SCSS
+* {
+    font-family: "Avenir Next", "Monaco", sans-serif;
+}
+
+h1 {
+    color: $secondary;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Monaco", sans-serif;
+    font-size: 2rem;
+}
+
+.monaco, .monaco * {
+    font-family: "Monaco", sans-serif;
+}
+
+nav {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.active {
+    background-color: $secondary !important;
+}
+
+#homeText {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#homeText > h1 {
+    padding-bottom: 1rem;
+}
+
+#aboutText {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#aboutText > h1 {
+    padding-bottom: 1rem;
+}
+
+#aboutText > h2 {
+    padding-top: 1rem;
+}
+
+#homeSlideshow > button {
+    height: 10rem;
+    width: 2.5rem;
+}
+
+#homeSlideshow > img {
+    object-fit: cover;
+    width: 75%;
+    height: 25vh;
+}
+
+#pageBody > * {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50rem;
+}
+
+#pageBody > a {
+    margin-top: -1rem;
+}
+
+#contactText {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#AboutPhotographerPhoto, #AboutGearPhoto {
+    max-height: 35%;
+    max-width: 35%;
+}
+
+#GearTitle {
+    margin-bottom: 1rem;
+}
+
+#GearBody {
+    margin-top: 1rem;
+}
+
+.active {
+    background-color: $primary !important;
+    color: white;
+}
+
+#blueTextRow > * {
+    color: $primary;
+}
+
+table {
+    margin-top: 4rem;
+    margin-bottom: 4rem !important;
+}
+
+form {
+    padding: 4rem;
+}
+
+form label {
+    color: $primary !important;
+}
+
+#tableText {
+    margin-bottom: .25rem;
+}
+
+#MobileRate {
+    display: none;
+    width: 100%;
+    height: 5rem;
+    background-color: $primary;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    align-content: center;
+}
+
+form .row .col {
+    margin-top: 1rem;
+}
+
+#CommentsBox {
+    margin-top: 1.5rem;
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+#PhotoGallery .row .col > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: .25rem;
+}
+
+.card {
+    padding: 0;
+    margin: 1rem;
+}
+
+.w-s {
+    flex-grow: 1;
+}
+
+.w-l {
+    flex-grow: 2;
+}
+
+#ContactTypeText {
+    font-size: 1rem;
+}
+
+@include media-breakpoint-down(lg) {
+
+    .pageSection {
+        text-align: center !important;
+    }
+
+    #backButton {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    form .row {
+        display: inline-block;
+        flex-grow: 1;
+        height:100px;
+        width: 100%;
+    }
+
+    #PhotoGallery .row {
+        display: inline-block;
+        flex-grow: 1;
+        height:100px;
+        width: 100%;
+    }
+
+    #PhotoGallery .card {
+        margin-left: auto;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    .table {
+        display: none;
+    }
+
+    #MobileRate {
+        display: grid;
+    }
+
+    #homeSlideshow > img {
+        object-fit: contain;
+        width: calc(100% - 6rem);
+        height: 25vh;
+    }
+
+    #homeSlideshow > button {
+        height: 5rem;
+        width: 2.5rem;
+    }
+
+    .nav-item > a {
+        width: 100% !important;
+    }
+
+    .nav-item {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+}

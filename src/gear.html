@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>About Gear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 
+    Don't add stylesheets/main.css or javascripts/main.js manually. 
+    They will be added automatically by Webpack.
+  -->
+</head>
+
+<body>
+  <!--  Your HTML goes here-->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./images/bigLogo.png" alt="Logo" width="130" height="40" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse monaco" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown px-2">
+              <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./about.html">Photographer</a></li>
+                <li><a class="dropdown-item active" href="./gear.html">Gear</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a class="btn btn-outline-primary" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="btn btn-outline-primary" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div id="aboutText" class="pageSection">
+          <a class="btn btn-outline-secondary monaco" href="./about.html" role="button" id="backButton">
+            <i class="fa-solid fa-arrow-left"></i> Back To About
+          </a>
+          <div class="text-center">
+            <h1 id="GearTitle">About My Gear</h1>
+          <img src="./images/iphone.png" alt="The Gear" id="AboutGearPhoto">
+          <h2 id="GearBody">I use gear that is simple but powerful.<br>
+            I shoot all of my photos with an iPhone 14 Pro Max.</h2>
+          </div>
+        </div>
+        <div id="pageBody">
+          <p class="text-start">The portability and battery life of the iPhone allows me to easily 
+            bring my camera with me to all kinds of terrains and locations, while the camera and 
+            image processing on the iPhone allow the photos to still look amazing, despite the fact 
+            that they were taken on a mobile device.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

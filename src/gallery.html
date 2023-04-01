@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 
+    Don't add stylesheets/main.css or javascripts/main.js manually. 
+    They will be added automatically by Webpack.
+  -->
+</head>
+
+<body>
+  <!--  Your HTML goes here-->
+  <header>
+      <nav class="navbar navbar-expand-lg bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./images/bigLogo.png" alt="Logo" width="130" height="40" class="d-inline-block align-text-top"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse monaco" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown px-2">
+              <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./about.html">Photographer</a></li>
+                <li><a class="dropdown-item" href="./gear.html">Gear</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a class="btn btn-outline-primary" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="btn btn-outline-secondary" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div id="homeText">
+          <h1>Gallery</h1>
+          <h2>Here are some of the photos I've taken: </h2>
+          <div class="container" id="PhotoGallery">
+            <div class="row">
+              <div class="col card w-l">
+                <img src="./images/5.jpg" alt="Couple">
+              </div>
+              <div class="col card w-s">
+                <img src="./images/6.jpg" alt="Young Man">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col card w-s">
+                <img src="./images/4.jpg" alt="Couple Holding Hands">
+              </div>
+              <div class="col card w-l">
+                <img src="./images/7.jpg" alt="Kissing At A Wedding">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col card w-s">
+                <img src="./images/8.jpg" alt="Couple By A Fire">
+              </div>
+              <div class="col card w-l">
+                <img src="./images/9.jpg" alt="Woman In Coat">
+              </div>
+              <div class="col card w-s">
+                <img src="./images/10.jpg" alt="Couple">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
